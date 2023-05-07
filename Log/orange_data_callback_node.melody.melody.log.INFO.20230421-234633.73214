@@ -1,0 +1,442 @@
+Log file created at: 2023/04/21 23:46:33
+Running on machine: melody
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0421 23:46:33.644186 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:33.644665 73223 visual_odometry.cpp:58] VO cost time: 1.62e-07 seconds.
+I0421 23:46:33.739145 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:33.739279 73223 visual_odometry.cpp:58] VO cost time: 4.7e-08 seconds.
+I0421 23:46:33.840412 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:33.840704 73223 visual_odometry.cpp:58] VO cost time: 1.1e-07 seconds.
+I0421 23:46:33.940250 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:33.940595 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:34.038632 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.038770 73223 visual_odometry.cpp:58] VO cost time: 6.3e-08 seconds.
+I0421 23:46:34.139484 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.139644 73223 visual_odometry.cpp:58] VO cost time: 5.1e-08 seconds.
+I0421 23:46:34.239992 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.240280 73223 visual_odometry.cpp:58] VO cost time: 5.4e-08 seconds.
+I0421 23:46:34.374806 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.375082 73223 visual_odometry.cpp:58] VO cost time: 1.55e-07 seconds.
+I0421 23:46:34.474372 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.474681 73223 visual_odometry.cpp:58] VO cost time: 1.7e-07 seconds.
+I0421 23:46:34.572750 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.572873 73223 visual_odometry.cpp:58] VO cost time: 8.4e-08 seconds.
+I0421 23:46:34.672983 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.673120 73223 visual_odometry.cpp:58] VO cost time: 5.5e-08 seconds.
+I0421 23:46:34.773600 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.773733 73223 visual_odometry.cpp:58] VO cost time: 6.1e-08 seconds.
+I0421 23:46:34.874950 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.875244 73223 visual_odometry.cpp:58] VO cost time: 1.66e-07 seconds.
+I0421 23:46:34.974570 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:34.974871 73223 visual_odometry.cpp:58] VO cost time: 1.96e-07 seconds.
+I0421 23:46:35.073904 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.074213 73223 visual_odometry.cpp:58] VO cost time: 1.79e-07 seconds.
+I0421 23:46:35.175235 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.175540 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:35.306584 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.306706 73223 visual_odometry.cpp:58] VO cost time: 4.9e-08 seconds.
+I0421 23:46:35.407752 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.408061 73223 visual_odometry.cpp:58] VO cost time: 1.02e-07 seconds.
+I0421 23:46:35.507081 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.507352 73223 visual_odometry.cpp:58] VO cost time: 1.85e-07 seconds.
+I0421 23:46:35.608495 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.608795 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:35.707621 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.707893 73223 visual_odometry.cpp:58] VO cost time: 1.43e-07 seconds.
+I0421 23:46:35.807372 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.807693 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:35.906741 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:35.907109 73223 visual_odometry.cpp:58] VO cost time: 1.58e-07 seconds.
+I0421 23:46:36.008456 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.008774 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:36.108085 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.108368 73223 visual_odometry.cpp:58] VO cost time: 1.44e-07 seconds.
+I0421 23:46:36.240499 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.240782 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:36.340278 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.340618 73223 visual_odometry.cpp:58] VO cost time: 1.86e-07 seconds.
+I0421 23:46:36.439965 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.440315 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:36.540206 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.540513 73223 visual_odometry.cpp:58] VO cost time: 1.5e-07 seconds.
+I0421 23:46:36.640280 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.640561 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:36.740352 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.740676 73223 visual_odometry.cpp:58] VO cost time: 2.15e-07 seconds.
+I0421 23:46:36.839917 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.840217 73223 visual_odometry.cpp:58] VO cost time: 1.06e-07 seconds.
+I0421 23:46:36.939713 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:36.940047 73223 visual_odometry.cpp:58] VO cost time: 1.43e-07 seconds.
+I0421 23:46:37.039834 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.040216 73223 visual_odometry.cpp:58] VO cost time: 1.9e-07 seconds.
+I0421 23:46:37.174983 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.175271 73223 visual_odometry.cpp:58] VO cost time: 1.86e-07 seconds.
+I0421 23:46:37.272325 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.272629 73223 visual_odometry.cpp:58] VO cost time: 1.75e-07 seconds.
+I0421 23:46:37.374166 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.374562 73223 visual_odometry.cpp:58] VO cost time: 1.94e-07 seconds.
+I0421 23:46:37.474035 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.474401 73223 visual_odometry.cpp:58] VO cost time: 1.34e-07 seconds.
+I0421 23:46:37.574702 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.575093 73223 visual_odometry.cpp:58] VO cost time: 2.35e-07 seconds.
+I0421 23:46:37.674440 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.674789 73223 visual_odometry.cpp:58] VO cost time: 2.26e-07 seconds.
+I0421 23:46:37.773698 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.774004 73223 visual_odometry.cpp:58] VO cost time: 1.28e-07 seconds.
+I0421 23:46:37.874806 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.875092 73223 visual_odometry.cpp:58] VO cost time: 1.83e-07 seconds.
+I0421 23:46:37.974617 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:37.974956 73223 visual_odometry.cpp:58] VO cost time: 1.52e-07 seconds.
+I0421 23:46:38.107286 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.107620 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:38.206707 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.207005 73223 visual_odometry.cpp:58] VO cost time: 2.2e-07 seconds.
+I0421 23:46:38.308586 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.308943 73223 visual_odometry.cpp:58] VO cost time: 1.86e-07 seconds.
+I0421 23:46:38.408139 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.408494 73223 visual_odometry.cpp:58] VO cost time: 2.3e-07 seconds.
+I0421 23:46:38.507717 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.508034 73223 visual_odometry.cpp:58] VO cost time: 1.37e-07 seconds.
+I0421 23:46:38.607431 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.607756 73223 visual_odometry.cpp:58] VO cost time: 1.61e-07 seconds.
+I0421 23:46:38.706799 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.707170 73223 visual_odometry.cpp:58] VO cost time: 1.79e-07 seconds.
+I0421 23:46:38.805613 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.805764 73223 visual_odometry.cpp:58] VO cost time: 4.7e-08 seconds.
+I0421 23:46:38.908629 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:38.908929 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:39.041455 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.041802 73223 visual_odometry.cpp:58] VO cost time: 1.73e-07 seconds.
+I0421 23:46:39.140949 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.141289 73223 visual_odometry.cpp:58] VO cost time: 1.95e-07 seconds.
+I0421 23:46:39.240168 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.240468 73223 visual_odometry.cpp:58] VO cost time: 1.53e-07 seconds.
+I0421 23:46:39.339987 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.340344 73223 visual_odometry.cpp:58] VO cost time: 1.82e-07 seconds.
+I0421 23:46:39.439882 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.440198 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:39.539662 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.539932 73223 visual_odometry.cpp:58] VO cost time: 1.09e-07 seconds.
+I0421 23:46:39.641486 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.641836 73223 visual_odometry.cpp:58] VO cost time: 1.75e-07 seconds.
+I0421 23:46:39.741216 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.741520 73223 visual_odometry.cpp:58] VO cost time: 2.08e-07 seconds.
+I0421 23:46:39.841101 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.841468 73223 visual_odometry.cpp:58] VO cost time: 1.74e-07 seconds.
+I0421 23:46:39.973489 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:39.973860 73223 visual_odometry.cpp:58] VO cost time: 1.9e-07 seconds.
+I0421 23:46:40.073558 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.073854 73223 visual_odometry.cpp:58] VO cost time: 1.41e-07 seconds.
+I0421 23:46:40.175000 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.175120 73223 visual_odometry.cpp:58] VO cost time: 5.3e-08 seconds.
+I0421 23:46:40.274809 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.275094 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:40.375356 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.375731 73223 visual_odometry.cpp:58] VO cost time: 2.07e-07 seconds.
+I0421 23:46:40.473325 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.473606 73223 visual_odometry.cpp:58] VO cost time: 1.47e-07 seconds.
+I0421 23:46:40.574389 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.574514 73223 visual_odometry.cpp:58] VO cost time: 6.3e-08 seconds.
+I0421 23:46:40.675416 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.675767 73223 visual_odometry.cpp:58] VO cost time: 1.45e-07 seconds.
+I0421 23:46:40.774752 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.775065 73223 visual_odometry.cpp:58] VO cost time: 1.6e-07 seconds.
+I0421 23:46:40.907514 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:40.907831 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:41.007525 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.007894 73223 visual_odometry.cpp:58] VO cost time: 1.5e-07 seconds.
+I0421 23:46:41.107172 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.107473 73223 visual_odometry.cpp:58] VO cost time: 1.27e-07 seconds.
+I0421 23:46:41.206935 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.207266 73223 visual_odometry.cpp:58] VO cost time: 1.87e-07 seconds.
+I0421 23:46:41.305605 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.305734 73223 visual_odometry.cpp:58] VO cost time: 5.5e-08 seconds.
+I0421 23:46:41.407091 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.407408 73223 visual_odometry.cpp:58] VO cost time: 1.79e-07 seconds.
+I0421 23:46:41.506844 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.507154 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:41.608722 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.609046 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:41.708678 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.709000 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:41.808766 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.809100 73223 visual_odometry.cpp:58] VO cost time: 1.5e-07 seconds.
+I0421 23:46:41.941653 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:41.941990 73223 visual_odometry.cpp:58] VO cost time: 1.32e-07 seconds.
+I0421 23:46:42.041092 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.041364 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:42.140394 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.140523 73223 visual_odometry.cpp:58] VO cost time: 6.3e-08 seconds.
+I0421 23:46:42.241719 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.242008 73223 visual_odometry.cpp:58] VO cost time: 1.34e-07 seconds.
+I0421 23:46:42.341432 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.341728 73223 visual_odometry.cpp:58] VO cost time: 2.03e-07 seconds.
+I0421 23:46:42.440889 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.441205 73223 visual_odometry.cpp:58] VO cost time: 1.76e-07 seconds.
+I0421 23:46:42.540988 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.541298 73223 visual_odometry.cpp:58] VO cost time: 1.5e-07 seconds.
+I0421 23:46:42.673813 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.674104 73223 visual_odometry.cpp:58] VO cost time: 1.3e-07 seconds.
+I0421 23:46:42.741791 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.742094 73223 visual_odometry.cpp:58] VO cost time: 1.41e-07 seconds.
+I0421 23:46:42.874763 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.875037 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:42.975009 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:42.975360 73223 visual_odometry.cpp:58] VO cost time: 2.01e-07 seconds.
+I0421 23:46:43.074412 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.074707 73223 visual_odometry.cpp:58] VO cost time: 1.43e-07 seconds.
+I0421 23:46:43.174165 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.174458 73223 visual_odometry.cpp:58] VO cost time: 1.57e-07 seconds.
+I0421 23:46:43.273427 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.273774 73223 visual_odometry.cpp:58] VO cost time: 1.79e-07 seconds.
+I0421 23:46:43.374949 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.375273 73223 visual_odometry.cpp:58] VO cost time: 1.47e-07 seconds.
+I0421 23:46:43.473839 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.473965 73223 visual_odometry.cpp:58] VO cost time: 6.9e-08 seconds.
+I0421 23:46:43.573473 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.573896 73223 visual_odometry.cpp:58] VO cost time: 1.72e-07 seconds.
+I0421 23:46:43.675012 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.675298 73223 visual_odometry.cpp:58] VO cost time: 1.39e-07 seconds.
+I0421 23:46:43.806871 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.807049 73223 visual_odometry.cpp:58] VO cost time: 8.5e-08 seconds.
+I0421 23:46:43.904994 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:43.905154 73223 visual_odometry.cpp:58] VO cost time: 5.7e-08 seconds.
+I0421 23:46:44.007766 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.007959 73223 visual_odometry.cpp:58] VO cost time: 8e-08 seconds.
+I0421 23:46:44.107302 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.107641 73223 visual_odometry.cpp:58] VO cost time: 2.01e-07 seconds.
+I0421 23:46:44.207080 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.207398 73223 visual_odometry.cpp:58] VO cost time: 1.89e-07 seconds.
+I0421 23:46:44.307343 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.307677 73223 visual_odometry.cpp:58] VO cost time: 1.56e-07 seconds.
+I0421 23:46:44.407193 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.407446 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:44.506963 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.507273 73223 visual_odometry.cpp:58] VO cost time: 1.31e-07 seconds.
+I0421 23:46:44.640316 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.640617 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:44.742161 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.742460 73223 visual_odometry.cpp:58] VO cost time: 1.54e-07 seconds.
+I0421 23:46:44.840310 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.840663 73223 visual_odometry.cpp:58] VO cost time: 1.95e-07 seconds.
+I0421 23:46:44.939795 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:44.940084 73223 visual_odometry.cpp:58] VO cost time: 1.29e-07 seconds.
+I0421 23:46:45.040846 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.041124 73223 visual_odometry.cpp:58] VO cost time: 1.5e-07 seconds.
+I0421 23:46:45.140610 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.140955 73223 visual_odometry.cpp:58] VO cost time: 1.8e-07 seconds.
+I0421 23:46:45.239955 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.240276 73223 visual_odometry.cpp:58] VO cost time: 1.26e-07 seconds.
+I0421 23:46:45.341782 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.342092 73223 visual_odometry.cpp:58] VO cost time: 1.86e-07 seconds.
+I0421 23:46:45.441089 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.441211 73223 visual_odometry.cpp:58] VO cost time: 5.8e-08 seconds.
+I0421 23:46:45.574414 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.574805 73223 visual_odometry.cpp:58] VO cost time: 2.04e-07 seconds.
+I0421 23:46:45.674284 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.674561 73223 visual_odometry.cpp:58] VO cost time: 1.4e-07 seconds.
+I0421 23:46:45.772742 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.772980 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:45.874508 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.874787 73223 visual_odometry.cpp:58] VO cost time: 1.73e-07 seconds.
+I0421 23:46:45.973006 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:45.973131 73223 visual_odometry.cpp:58] VO cost time: 5.8e-08 seconds.
+I0421 23:46:46.074537 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.074826 73223 visual_odometry.cpp:58] VO cost time: 1.62e-07 seconds.
+I0421 23:46:46.173696 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.173971 73223 visual_odometry.cpp:58] VO cost time: 2.12e-07 seconds.
+I0421 23:46:46.273217 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.273509 73223 visual_odometry.cpp:58] VO cost time: 1.27e-07 seconds.
+I0421 23:46:46.372659 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.372795 73223 visual_odometry.cpp:58] VO cost time: 5.7e-08 seconds.
+I0421 23:46:46.507402 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.507714 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:46.607240 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.607566 73223 visual_odometry.cpp:58] VO cost time: 1.43e-07 seconds.
+I0421 23:46:46.709015 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.709318 73223 visual_odometry.cpp:58] VO cost time: 1.52e-07 seconds.
+I0421 23:46:46.806833 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.807138 73223 visual_odometry.cpp:58] VO cost time: 2.07e-07 seconds.
+I0421 23:46:46.908677 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:46.909008 73223 visual_odometry.cpp:58] VO cost time: 1.78e-07 seconds.
+I0421 23:46:47.006667 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.006984 73223 visual_odometry.cpp:58] VO cost time: 1.8e-07 seconds.
+I0421 23:46:47.107466 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.107851 73223 visual_odometry.cpp:58] VO cost time: 1.47e-07 seconds.
+I0421 23:46:47.206823 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.207106 73223 visual_odometry.cpp:58] VO cost time: 2.6e-07 seconds.
+I0421 23:46:47.306605 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.306949 73223 visual_odometry.cpp:58] VO cost time: 1.87e-07 seconds.
+I0421 23:46:47.406489 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.406780 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:47.540558 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.540946 73223 visual_odometry.cpp:58] VO cost time: 2.39e-07 seconds.
+I0421 23:46:47.639694 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.639827 73223 visual_odometry.cpp:58] VO cost time: 5.2e-08 seconds.
+I0421 23:46:47.738201 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.738338 73223 visual_odometry.cpp:58] VO cost time: 5.2e-08 seconds.
+I0421 23:46:47.841931 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.842245 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:47.941794 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:47.942099 73223 visual_odometry.cpp:58] VO cost time: 1.3e-07 seconds.
+I0421 23:46:48.041282 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.041636 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:48.138415 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.138561 73223 visual_odometry.cpp:58] VO cost time: 4.6e-08 seconds.
+I0421 23:46:48.240329 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.240636 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:48.373971 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.374264 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:48.475073 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.475345 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:48.574862 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.575246 73223 visual_odometry.cpp:58] VO cost time: 1.71e-07 seconds.
+I0421 23:46:48.674917 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.675246 73223 visual_odometry.cpp:58] VO cost time: 1.4e-07 seconds.
+I0421 23:46:48.773399 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.773576 73223 visual_odometry.cpp:58] VO cost time: 6.8e-08 seconds.
+I0421 23:46:48.874926 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.875224 73223 visual_odometry.cpp:58] VO cost time: 1.36e-07 seconds.
+I0421 23:46:48.974857 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:48.975169 73223 visual_odometry.cpp:58] VO cost time: 1.63e-07 seconds.
+I0421 23:46:49.071996 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.072150 73223 visual_odometry.cpp:58] VO cost time: 5.6e-08 seconds.
+I0421 23:46:49.207355 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.207651 73223 visual_odometry.cpp:58] VO cost time: 1.56e-07 seconds.
+I0421 23:46:49.273398 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.273685 73223 visual_odometry.cpp:58] VO cost time: 1.41e-07 seconds.
+I0421 23:46:49.406751 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.407042 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:49.508235 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.508507 73223 visual_odometry.cpp:58] VO cost time: 1.29e-07 seconds.
+I0421 23:46:49.607771 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.608050 73223 visual_odometry.cpp:58] VO cost time: 1.47e-07 seconds.
+I0421 23:46:49.707376 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.707684 73223 visual_odometry.cpp:58] VO cost time: 1.47e-07 seconds.
+I0421 23:46:49.806329 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.806471 73223 visual_odometry.cpp:58] VO cost time: 6e-08 seconds.
+I0421 23:46:49.907822 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:49.908126 73223 visual_odometry.cpp:58] VO cost time: 1.25e-07 seconds.
+I0421 23:46:50.007561 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.007844 73223 visual_odometry.cpp:58] VO cost time: 1.43e-07 seconds.
+I0421 23:46:50.106988 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.107282 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:50.239909 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.240237 73223 visual_odometry.cpp:58] VO cost time: 1.63e-07 seconds.
+I0421 23:46:50.307778 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.307945 73223 visual_odometry.cpp:58] VO cost time: 6.5e-08 seconds.
+I0421 23:46:50.439158 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.439471 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:50.540971 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.541282 73223 visual_odometry.cpp:58] VO cost time: 1.46e-07 seconds.
+I0421 23:46:50.639636 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.639771 73223 visual_odometry.cpp:58] VO cost time: 5.3e-08 seconds.
+I0421 23:46:50.741406 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.741708 73223 visual_odometry.cpp:58] VO cost time: 1.32e-07 seconds.
+I0421 23:46:50.840631 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.840920 73223 visual_odometry.cpp:58] VO cost time: 1.47e-07 seconds.
+I0421 23:46:50.939750 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:50.939872 73223 visual_odometry.cpp:58] VO cost time: 4.7e-08 seconds.
+I0421 23:46:51.038170 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.038307 73223 visual_odometry.cpp:58] VO cost time: 5.1e-08 seconds.
+I0421 23:46:51.139472 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.139719 73223 visual_odometry.cpp:58] VO cost time: 1.25e-07 seconds.
+I0421 23:46:51.273640 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.273936 73223 visual_odometry.cpp:58] VO cost time: 1.78e-07 seconds.
+I0421 23:46:51.373064 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.373409 73223 visual_odometry.cpp:58] VO cost time: 1.49e-07 seconds.
+I0421 23:46:51.474521 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.474797 73223 visual_odometry.cpp:58] VO cost time: 1.42e-07 seconds.
+I0421 23:46:51.574200 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.574513 73223 visual_odometry.cpp:58] VO cost time: 1.92e-07 seconds.
+I0421 23:46:51.673801 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.674105 73223 visual_odometry.cpp:58] VO cost time: 1.51e-07 seconds.
+I0421 23:46:51.773629 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.773907 73223 visual_odometry.cpp:58] VO cost time: 1.6e-07 seconds.
+I0421 23:46:51.875195 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:51.875533 73223 visual_odometry.cpp:58] VO cost time: 1.95e-07 seconds.
+I0421 23:46:52.008118 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.008388 73223 visual_odometry.cpp:58] VO cost time: 1.33e-07 seconds.
+I0421 23:46:52.074175 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.074476 73223 visual_odometry.cpp:58] VO cost time: 1.48e-07 seconds.
+I0421 23:46:52.207198 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.207479 73223 visual_odometry.cpp:58] VO cost time: 1.28e-07 seconds.
+I0421 23:46:52.306869 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.307178 73223 visual_odometry.cpp:58] VO cost time: 1.5e-07 seconds.
+I0421 23:46:52.406689 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.406965 73223 visual_odometry.cpp:58] VO cost time: 1.62e-07 seconds.
+I0421 23:46:52.506840 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.507148 73223 visual_odometry.cpp:58] VO cost time: 1.52e-07 seconds.
+I0421 23:46:52.606401 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.606698 73223 visual_odometry.cpp:58] VO cost time: 1.59e-07 seconds.
+I0421 23:46:52.704842 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.704964 73223 visual_odometry.cpp:58] VO cost time: 5e-08 seconds.
+I0421 23:46:52.808372 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.808655 73223 visual_odometry.cpp:58] VO cost time: 1.41e-07 seconds.
+I0421 23:46:52.907532 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:52.907843 73223 visual_odometry.cpp:58] VO cost time: 1.8e-07 seconds.
+I0421 23:46:53.007273 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.007596 73223 visual_odometry.cpp:58] VO cost time: 1.82e-07 seconds.
+I0421 23:46:53.140648 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.140949 73223 visual_odometry.cpp:58] VO cost time: 1.92e-07 seconds.
+I0421 23:46:53.240250 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.240574 73223 visual_odometry.cpp:58] VO cost time: 2.04e-07 seconds.
+I0421 23:46:53.341929 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.342209 73223 visual_odometry.cpp:58] VO cost time: 1.02e-07 seconds.
+I0421 23:46:53.441453 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.441756 73223 visual_odometry.cpp:58] VO cost time: 1.43e-07 seconds.
+I0421 23:46:53.540850 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.541211 73223 visual_odometry.cpp:58] VO cost time: 1.78e-07 seconds.
+I0421 23:46:53.640872 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.641227 73223 visual_odometry.cpp:58] VO cost time: 1.65e-07 seconds.
+I0421 23:46:53.738348 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.738471 73223 visual_odometry.cpp:58] VO cost time: 4.7e-08 seconds.
+I0421 23:46:53.839604 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.839804 73223 visual_odometry.cpp:58] VO cost time: 1.02e-07 seconds.
+I0421 23:46:53.938100 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:53.938236 73223 visual_odometry.cpp:58] VO cost time: 5.5e-08 seconds.
+I0421 23:46:54.075572 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.075919 73223 visual_odometry.cpp:58] VO cost time: 1.92e-07 seconds.
+I0421 23:46:54.172600 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.172725 73223 visual_odometry.cpp:58] VO cost time: 6.4e-08 seconds.
+I0421 23:46:54.275487 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.275875 73223 visual_odometry.cpp:58] VO cost time: 1.92e-07 seconds.
+I0421 23:46:54.374989 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.375270 73223 visual_odometry.cpp:58] VO cost time: 1.62e-07 seconds.
+I0421 23:46:54.474743 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.475040 73223 visual_odometry.cpp:58] VO cost time: 1.45e-07 seconds.
+I0421 23:46:54.573465 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.573586 73223 visual_odometry.cpp:58] VO cost time: 5.1e-08 seconds.
+I0421 23:46:54.673374 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.673507 73223 visual_odometry.cpp:58] VO cost time: 8.3e-08 seconds.
+I0421 23:46:54.772171 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.772361 73223 visual_odometry.cpp:58] VO cost time: 6.5e-08 seconds.
+I0421 23:46:54.872350 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:54.872483 73223 visual_odometry.cpp:58] VO cost time: 7.3e-08 seconds.
+I0421 23:46:55.005666 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.005797 73223 visual_odometry.cpp:58] VO cost time: 7.1e-08 seconds.
+I0421 23:46:55.072605 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.072715 73223 visual_odometry.cpp:58] VO cost time: 5.9e-08 seconds.
+I0421 23:46:55.205561 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.205690 73223 visual_odometry.cpp:58] VO cost time: 6.8e-08 seconds.
+I0421 23:46:55.305354 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.305728 73223 visual_odometry.cpp:58] VO cost time: 5.4e-08 seconds.
+I0421 23:46:55.408370 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.408528 73223 visual_odometry.cpp:58] VO cost time: 5.7e-08 seconds.
+I0421 23:46:55.507483 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.507970 73223 visual_odometry.cpp:58] VO cost time: 5e-08 seconds.
+I0421 23:46:55.605834 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.606001 73223 visual_odometry.cpp:58] VO cost time: 6.9e-08 seconds.
+I0421 23:46:55.705878 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.706117 73223 visual_odometry.cpp:58] VO cost time: 6e-08 seconds.
+I0421 23:46:55.805967 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.806177 73223 visual_odometry.cpp:58] VO cost time: 5e-08 seconds.
+I0421 23:46:55.905789 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:55.905949 73223 visual_odometry.cpp:58] VO cost time: 4.8e-08 seconds.
+I0421 23:46:56.008705 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:56.008970 73223 visual_odometry.cpp:58] VO cost time: 1.35e-07 seconds.
+I0421 23:46:56.141053 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:56.141284 73223 visual_odometry.cpp:58] VO cost time: 1.35e-07 seconds.
+I0421 23:46:56.239804 73223 orange_data_callback_node.cpp:90] start vslam front end.
+I0421 23:46:56.240067 73223 visual_odometry.cpp:58] VO cost time: 8.1e-08 seconds.
+I0421 23:46:56.340517

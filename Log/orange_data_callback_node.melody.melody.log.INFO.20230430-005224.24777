@@ -1,0 +1,164 @@
+Log file created at: 2023/04/30 00:52:24
+Running on machine: melody
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0430 00:52:24.507400 24777 parameters.cpp:91] USE_IMU: 0
+I0430 00:52:24.507565 24777 parameters.cpp:109] result path /home/tony-ws1/output//vio.csv
+W0430 00:52:24.507580 24777 parameters.cpp:126]  fix extrinsic param 
+I0430 00:52:24.507680 24777 parameters.cpp:137] camera number: 2
+I0430 00:52:24.507699 24777 parameters.cpp:178] Synchronized sensors, fix time offset: 0
+I0430 00:52:24.507719 24777 parameters.cpp:182] ROW: 376 COL: 1241
+I0430 00:52:24.507722 24777 parameters.cpp:187] no imu, fix extrinsic param; no time offset calibration
+I0430 00:52:24.507733 24777 pose_graph.cpp:18]  exitrinsic cam 0
+1 0 0
+0 1 0
+0 0 1
+0 0 0
+I0430 00:52:24.507766 24777 pose_graph.cpp:18]  exitrinsic cam 1
+1 0 0
+0 1 0
+0 0 1
+0.537166 00000000 00000000
+I0430 00:52:24.507794 24777 pose_graph.cpp:26] set g 000 000 9.8
+I0430 00:52:35.385493 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:35.385515 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:35.386315 24787 feature_tracker.cpp:119] set mask costs 0.798812 ms.
+I0430 00:52:35.386323 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:35.398458 24787 feature_tracker.cpp:134] detect feature costs 12.1422 ms.
+I0430 00:52:35.483825 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:35.488955 24787 feature_tracker.cpp:110] temporal optical flow costs: 5.12575 ms
+I0430 00:52:35.489012 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:35.491341 24787 feature_tracker.cpp:119] set mask costs 2.3384 ms.
+I0430 00:52:35.491400 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:35.502168 24787 feature_tracker.cpp:134] detect feature costs 10.7718 ms.
+I0430 00:52:35.584071 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:35.586318 24787 feature_tracker.cpp:110] temporal optical flow costs: 2.23147 ms
+I0430 00:52:35.586347 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:35.587237 24787 feature_tracker.cpp:119] set mask costs 0.882078 ms.
+I0430 00:52:35.587244 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:35.598430 24787 feature_tracker.cpp:134] detect feature costs 11.1943 ms.
+I0430 00:52:35.686069 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:35.692719 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.61929 ms
+I0430 00:52:35.692780 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:35.695096 24787 feature_tracker.cpp:119] set mask costs 2.29451 ms.
+I0430 00:52:35.695132 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:35.708894 24787 feature_tracker.cpp:134] detect feature costs 13.7792 ms.
+I0430 00:52:35.785693 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:35.793674 24787 feature_tracker.cpp:110] temporal optical flow costs: 7.95147 ms
+I0430 00:52:35.793735 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:35.796195 24787 feature_tracker.cpp:119] set mask costs 2.45851 ms.
+I0430 00:52:35.796233 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:35.808432 24787 feature_tracker.cpp:134] detect feature costs 12.2073 ms.
+I0430 00:52:35.917302 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:35.925508 24787 feature_tracker.cpp:110] temporal optical flow costs: 8.18429 ms
+I0430 00:52:35.925575 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:35.928189 24787 feature_tracker.cpp:119] set mask costs 2.61779 ms.
+I0430 00:52:35.928231 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:35.941221 24787 feature_tracker.cpp:134] detect feature costs 13.0014 ms.
+I0430 00:52:36.018152 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.025315 24787 feature_tracker.cpp:110] temporal optical flow costs: 7.1375 ms
+I0430 00:52:36.025378 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.028069 24787 feature_tracker.cpp:119] set mask costs 2.69521 ms.
+I0430 00:52:36.028120 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.040174 24787 feature_tracker.cpp:134] detect feature costs 12.0624 ms.
+I0430 00:52:36.117470 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.126926 24787 feature_tracker.cpp:110] temporal optical flow costs: 9.36878 ms
+I0430 00:52:36.127030 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.129515 24787 feature_tracker.cpp:119] set mask costs 2.47324 ms.
+I0430 00:52:36.129539 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.142824 24787 feature_tracker.cpp:134] detect feature costs 13.2911 ms.
+I0430 00:52:36.218380 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.222865 24787 feature_tracker.cpp:110] temporal optical flow costs: 4.45865 ms
+I0430 00:52:36.222906 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.224462 24787 feature_tracker.cpp:119] set mask costs 1.55599 ms.
+I0430 00:52:36.224493 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.235471 24787 feature_tracker.cpp:134] detect feature costs 10.9832 ms.
+I0430 00:52:36.318814 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.325172 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.32499 ms
+I0430 00:52:36.325215 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.326730 24787 feature_tracker.cpp:119] set mask costs 1.51533 ms.
+I0430 00:52:36.326761 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.338495 24787 feature_tracker.cpp:134] detect feature costs 11.7454 ms.
+I0430 00:52:36.416898 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.420253 24787 feature_tracker.cpp:110] temporal optical flow costs: 3.33978 ms
+I0430 00:52:36.420291 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.421401 24787 feature_tracker.cpp:119] set mask costs 1.10383 ms.
+I0430 00:52:36.421411 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.433079 24787 feature_tracker.cpp:134] detect feature costs 11.6793 ms.
+I0430 00:52:36.518306 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.525472 24787 feature_tracker.cpp:110] temporal optical flow costs: 7.15047 ms
+I0430 00:52:36.525537 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.528839 24787 feature_tracker.cpp:119] set mask costs 3.30559 ms.
+I0430 00:52:36.528879 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.542800 24787 feature_tracker.cpp:134] detect feature costs 13.9353 ms.
+I0430 00:52:36.618131 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.625420 24787 feature_tracker.cpp:110] temporal optical flow costs: 7.26291 ms
+I0430 00:52:36.625475 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.628149 24787 feature_tracker.cpp:119] set mask costs 2.69022 ms.
+I0430 00:52:36.628223 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.639302 24787 feature_tracker.cpp:134] detect feature costs 11.0834 ms.
+I0430 00:52:36.717357 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.724922 24787 feature_tracker.cpp:110] temporal optical flow costs: 7.54508 ms
+I0430 00:52:36.724972 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.727706 24787 feature_tracker.cpp:119] set mask costs 2.74538 ms.
+I0430 00:52:36.727773 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.738238 24787 feature_tracker.cpp:134] detect feature costs 10.4709 ms.
+I0430 00:52:36.818055 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.824512 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.43649 ms
+I0430 00:52:36.824565 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.826975 24787 feature_tracker.cpp:119] set mask costs 2.41728 ms.
+I0430 00:52:36.827026 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.845876 24787 feature_tracker.cpp:134] detect feature costs 18.856 ms.
+I0430 00:52:36.952208 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:36.960409 24787 feature_tracker.cpp:110] temporal optical flow costs: 8.1832 ms
+I0430 00:52:36.960474 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:36.963097 24787 feature_tracker.cpp:119] set mask costs 2.56357 ms.
+I0430 00:52:36.963138 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:36.978379 24787 feature_tracker.cpp:134] detect feature costs 15.2442 ms.
+I0430 00:52:37.052498 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.059310 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.78238 ms
+I0430 00:52:37.059367 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.061964 24787 feature_tracker.cpp:119] set mask costs 2.57459 ms.
+I0430 00:52:37.061995 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.076280 24787 feature_tracker.cpp:134] detect feature costs 14.2961 ms.
+I0430 00:52:37.150811 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.157575 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.74308 ms
+I0430 00:52:37.157636 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.160080 24787 feature_tracker.cpp:119] set mask costs 2.43587 ms.
+I0430 00:52:37.160099 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.173005 24787 feature_tracker.cpp:134] detect feature costs 12.916 ms.
+I0430 00:52:37.251523 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.258249 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.70653 ms
+I0430 00:52:37.258311 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.261055 24787 feature_tracker.cpp:119] set mask costs 2.74593 ms.
+I0430 00:52:37.261094 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.275770 24787 feature_tracker.cpp:134] detect feature costs 14.6812 ms.
+I0430 00:52:37.350859 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.357369 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.48006 ms
+I0430 00:52:37.357424 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.359819 24787 feature_tracker.cpp:119] set mask costs 2.39248 ms.
+I0430 00:52:37.359846 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.371225 24787 feature_tracker.cpp:134] detect feature costs 11.3941 ms.
+I0430 00:52:37.452646 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.461081 24787 feature_tracker.cpp:110] temporal optical flow costs: 8.38073 ms
+I0430 00:52:37.461146 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.463443 24787 feature_tracker.cpp:119] set mask costs 2.29911 ms.
+I0430 00:52:37.463479 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.476094 24787 feature_tracker.cpp:134] detect feature costs 12.6259 ms.
+I0430 00:52:37.552775 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.559779 24787 feature_tracker.cpp:110] temporal optical flow costs: 6.98002 ms
+I0430 00:52:37.559845 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.562412 24787 feature_tracker.cpp:119] set mask costs 2.56313 ms.
+I0430 00:52:37.562454 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.575297 24787 feature_tracker.cpp:134] detect feature costs 12.8555 ms.
+I0430 00:52:37.651134 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.659795 24787 feature_tracker.cpp:110] temporal optical flow costs: 8.63868 ms
+I0430 00:52:37.659854 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.662081 24787 feature_tracker.cpp:119] set mask costs 2.23663 ms.
+I0430 00:52:37.662137 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00:52:37.674504 24787 feature_tracker.cpp:134] detect feature costs 12.3726 ms.
+I0430 00:52:37.784312 24787 orange_data_callback_node.cpp:96] start vslam front end.
+I0430 00:52:37.792647 24787 feature_tracker.cpp:110] temporal optical flow costs: 8.31329 ms
+I0430 00:52:37.792695 24787 feature_tracker.cpp:116] set mask begins
+I0430 00:52:37.795176 24787 feature_tracker.cpp:119] set mask costs 2.48336 ms.
+I0430 00:52:37.795217 24787 feature_tracker.cpp:121] detect feature begins
+I0430 00

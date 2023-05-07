@@ -1,0 +1,23 @@
+#pragma once
+
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/opencv.hpp>
+#include <ros/ros.h>
+#include <sensor_msgs/Image.h>
+
+#include "lidar_localization/sensor_data/image_data.hpp"
+
+namespace lidar_localization {
+class ImagePublisher {
+  public:
+    ImagePublisher(ros::NodeHandle &nh, std::string topic_name,
+                   size_t buff_size, std::string frame_id);
+    ImagePublisher() = default;
+    void Publish(ImageData image_data_input);
+
+  private:
+    ros::NodeHandle nh_;
+    ros::Publisher publisher_;
+    std::string frame_id_;
+};
+} // namespace lidar_localization

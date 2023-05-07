@@ -1,0 +1,21 @@
+#include "lidar_localization/publisher/image_publisher.h"
+
+namespace lidar_localization {
+ImagePublisher::ImagePublisher(ros::NodeHandle &nh, std::string topic_name,
+                               size_t buff_size, std::string frame_id)
+    : nh_(nh), frame_id_(frame_id) {
+    publisher_ = nh_.advertise<sensor_msgs::Image>(topic_name, buff_size);
+}
+
+void ImagePublisher::Publish(ImageData image_data_input) {
+    sensor_msgs::ImagePtr msg(new sensor_msgs::Image);
+
+    msg = cv_bridge::CvImage(std_msgs::Header(), "bgr8", image_data_input.image)
+              .toImageMsg();
+    // msg->header.stamp = ros::Time().fromSec(image_data_input.time);
+    msg->header.stamp = ros::Time::now();
+    msg->header.frame_id = frame_id_;
+    publisher_.publish(*msg);
+}
+
+} // namespace lidar_localization

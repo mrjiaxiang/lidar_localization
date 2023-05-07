@@ -1,0 +1,4 @@
+Log file created at: 2023/04/21 21:54:43
+Running on machine: melody
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0421 21:54:43.200824 41896 orange_data_callback_node.cpp:88] start vslam front end.

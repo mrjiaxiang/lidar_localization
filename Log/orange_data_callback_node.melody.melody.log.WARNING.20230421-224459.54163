@@ -1,0 +1,4 @@
+Log file created at: 2023/04/21 22:44:59
+Running on machine: melody
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+W0421 22:44:59.778178 54178 visual_odometry.cpp:50] 000000000000000000000
