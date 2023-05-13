@@ -46,6 +46,7 @@ extern std::string EX_CALIB_RESULT_PATH;
 extern std::string VINS_RESULT_PATH;
 extern std::string OUTPUT_FOLDER;
 extern std::string IMU_TOPIC;
+extern std::string GNSS_TOPIC;
 extern double TD;
 extern int ESTIMATE_TD;
 extern int ROLLING_SHUTTER;
@@ -66,6 +67,13 @@ extern int MIN_DIST;
 extern double F_THRESHOLD;
 extern int SHOW_TRACK;
 extern int FLOW_BACK;
+
+extern int KLT_WIN_SIZE;
+extern int PYRAMID_LEVEL;
+extern int SCALE_FACTOR;
+extern int NFEATURES;
+extern int INIT_FAST;
+extern int MIN_FAST;
 
 void readParameters(std::string config_file);
 

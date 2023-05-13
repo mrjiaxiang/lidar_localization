@@ -1,4 +1,5 @@
 #include "lidar_localization/front/LK/feature_tracker.h"
+
 #include <glog/logging.h>
 
 namespace lidar_localization {
@@ -31,6 +32,9 @@ bool FeatureTracker::inBorder(const cv::Point2f &pt) {
 FeatureTracker::FeatureTracker() {
     n_id_ = 0;
     has_prediction_ = false;
+
+    klt_win_size_ = KLT_WIN_SIZE;
+    pyramid_level_ = PYRAMID_LEVEL;
 }
 
 map<int, vector<pair<int, Eigen::Matrix<double, 7, 1>>>>
@@ -47,6 +51,22 @@ FeatureTracker::trackImage(double _cur_time, const cv::Mat &_img,
         clahe_->apply(cur_img_, cur_img_);
         if (!cur_right_img.empty()) {
             clahe_->apply(cur_right_img, cur_right_img);
+        }
+    }
+
+    cv::buildOpticalFlowPyramid(cur_img_, cur_image_pyr_,
+                                cv::Size(klt_win_size_, klt_win_size_),
+                                pyramid_level_);
+
+    std::vector<cv::Point2f>().swap(cur_pts_);
+    if (prev_pts_.size() > 0) {
+        std::vector<uchar> status;
+        vector<float> err;
+
+        if (has_prediction_) {
+            cur_pts_ = predict_pts_;
+            std::vector<uchar> status;
+            std::vector<float> err;
         }
     }
 
@@ -343,8 +363,8 @@ void FeatureTracker::drawTrack(const cv::Mat &imLeft, const cv::Mat &imRight,
             rightPt.x += cols;
             cv::circle(img_track_, rightPt, 2, cv::Scalar(0, 255, 0), 2);
             // cv::Point2f leftPt = curLeftPtsTrackRight[i];
-            // cv::line(imTrack, leftPt, rightPt, cv::Scalar(0, 255, 0), 1,
-            // 8, 0);
+            // cv::line(imTrack, leftPt, rightPt, cv::Scalar(0, 255, 0), 1, 8,
+            // 0);
         }
     }
 
@@ -370,5 +390,65 @@ void FeatureTracker::readIntrinsicParameter(const vector<string> &calib_file) {
 }
 
 cv::Mat FeatureTracker::getTrackImage() { return img_track_; }
+
+void FeatureTracker::extractFeature(const std::vector<cv::Mat> &prev_pyr,
+                                    const std::vector<cv::Mat> &cur_pyr,
+                                    const std::vector<cv::Point2f> &prev_kps,
+                                    std::vector<cv::Point2f> &cur_kps,
+                                    int win_size, int pyr_level,
+                                    std::vector<float> &err,
+                                    std::vector<uchar> &status) {
+    cv::TermCriteria criteria(cv::TermCriteria::COUNT + cv::TermCriteria::EPS,
+                              30, 0.01);
+    cv::calcOpticalFlowPyrLK(prev_pyr, cur_pyr, prev_pts_, cur_kps, status, err,
+                             cv::Size(win_size, win_size), pyr_level, criteria,
+                             cv::OPTFLOW_USE_INITIAL_FLOW +
+                                 cv::OPTFLOW_LK_GET_MIN_EIGENVALS);
+    size_t nkps = prev_kps.size();
+    std::vector<int> tracked_kps_idx;
+    std::vector<cv::Point2f> tracked_prev_kps;
+    std::vector<cv::Point2f> tracked_cur_kps;
+
+    tracked_kps_idx.reserve(nkps);
+    tracked_prev_kps.reserve(nkps);
+    tracked_cur_kps.reserve(nkps);
+
+    for (size_t i = 0; i < nkps; i++) {
+        if (!status[i] && !inBorder(cur_kps[i])) {
+            status[i] = 0;
+            continue;
+        }
+
+        tracked_prev_kps.push_back(prev_kps[i]);
+        tracked_cur_kps.push_back(cur_kps[i]);
+        tracked_kps_idx.push_back(i);
+    }
+
+    if (tracked_cur_kps.empty()) {
+        return;
+    }
+
+    if (FLOW_BACK) {
+        std::vector<uchar> reverse_status;
+        err.clear();
+        cv::calcOpticalFlowPyrLK(
+            cur_pyr, prev_pyr, tracked_cur_kps, tracked_prev_kps,
+            reverse_status, err, cv::Size(win_size, win_size), 0, criteria,
+            cv::OPTFLOW_USE_INITIAL_FLOW + cv::OPTFLOW_LK_GET_MIN_EIGENVALS);
+
+        for (size_t i = 0; i < tracked_cur_kps.size(); ++i) {
+            int idx = tracked_kps_idx[i];
+            if (!reverse_status[i]) {
+                status[idx] = 0;
+                continue;
+            }
+
+            if (cv::norm(prev_kps[idx] - tracked_prev_kps[i]) > 0.5) {
+                status[idx] = 0;
+                continue;
+            }
+        }
+    }
+}
 
 } // namespace lidar_localization

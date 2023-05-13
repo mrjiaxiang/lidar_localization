@@ -44,13 +44,16 @@ int main(int argc, char **argv) {
         WORK_SPACE_PATH + "/config/kitti_10_03_config.yaml";
 
     readParameters(config_file);
+
+    estimator_ptr->initialise();
     estimator_ptr->setParameter();
 
     registerPub(nh);
 
     shared_ptr<IMUSubscriber> imu_sub_ptr =
         make_shared<IMUSubscriber>(nh, IMU_TOPIC, 1000000);
-
+    shared_ptr<GNSSSubscriber> gnss_sub_ptr =
+        make_shared<GNSSSubscriber>(nh, GNSS_TOPIC, 10000);
     shared_ptr<ImageSubscriber> img_left_sub_ptr =
         make_shared<ImageSubscriber>(nh, IMAGE0_TOPIC, 100000);
     shared_ptr<ImageSubscriber> img_right_sub_ptr =
@@ -63,6 +66,17 @@ int main(int argc, char **argv) {
         imu_sub_ptr->ParseData(imu_data_buff);
         img_left_sub_ptr->ParseData(img_left_data_buff);
         img_right_sub_ptr->ParseData(img_right_data_buff);
+        gnss_sub_ptr->ParseData(gnss_data_buff);
+
+        if (!imu_data_buff.empty()) {
+            estimator_ptr->inputImu(imu_data_buff.front());
+            imu_data_buff.pop_front();
+        }
+
+        if (!gnss_data_buff.empty()) {
+            estimator_ptr->inputGNSS(gnss_data_buff.front());
+            gnss_data_buff.pop_front();
+        }
 
         rate.sleep();
     }

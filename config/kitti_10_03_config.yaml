@@ -5,6 +5,7 @@ imu: 0
 num_of_cam: 2  
 
 imu_topic: "/kitti/oxts/imu"
+gnss_topic: "/kitti/oxts/gps/fix"
 image0_topic: "/kitti/camera_color_left/image_raw"
 image1_topic: "/kitti/camera_color_right/image_raw"
 output_path: "/home/tony-ws1/output/"
@@ -41,6 +42,14 @@ body_T_cam1: !!opencv-matrix
 
 #Multiple thread support
 multiple_thread: 0
+
+#pyramid win size
+klt_win_size: 21
+pyramid_level: 3
+scale_factor: 1.2
+nfeatures: 2000
+init_fast: 20
+min_fast: 7
 
 #feature traker paprameters
 max_cnt: 200            # max feature number in feature tracking

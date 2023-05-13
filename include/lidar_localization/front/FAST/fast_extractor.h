@@ -22,7 +22,8 @@ class ExtractorNode {
 class FeatureExtractor {
   public:
     FeatureExtractor();
-    FeatureExtractor(int nfeatures_, float scaleFactor, int nlevels);
+    FeatureExtractor(int nfeatures_, float scaleFactor, int nlevels,
+                     int initThFast, int minThFast);
 
     ~FeatureExtractor();
 
@@ -38,9 +39,26 @@ class FeatureExtractor {
     void ComputeKeyPointsOctTree(
         std::vector<std::vector<cv::KeyPoint>> &allKeypoints);
 
+        int inline GetLevels() { return nlevels_; }
+
+    float inline GetScaleFactor() { return scaleFactor_; }
+
+    std::vector<float> inline GetScaleFactors() { return mvScaleFactor_; }
+
+    std::vector<float> inline GetInverseScaleFactors() {
+        return mvInvScaleFactor_;
+    }
+
+    std::vector<float> inline GetScaleSigmaSquares() { return mvLevelSigma2_; }
+
+    std::vector<float> inline GetInverseScaleSigmaSquares() {
+        return mvInvLevelSigma2_;
+    }
+
   public:
     std::vector<cv::Mat> mvImagePyramid_;
     std::vector<int> mnFeaturesPerLevel_;
+    std::vector<int> umax_;
 
   private:
     int nfeatures_;
@@ -60,9 +78,5 @@ class FeatureExtractor {
     cv::Ptr<cv::FastFeatureDetector> fast_detector_;
     cv::Ptr<cv::GFTTDetector> gftt_detector_;
 };
-std::vector<cv::KeyPoint> FeatureExtractor::DistributeOctTree(
-    const std::vector<cv::KeyPoint> &vToDistributeKeys, const int &minX,
-    const int &maxX, const int &minY, const int &maxY, const int &N,
-    const int &level) {}
 
 } // namespace lidar_localization

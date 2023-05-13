@@ -42,6 +42,13 @@ class FeatureTracker {
     void readIntrinsicParameter(const vector<string> &calib_file);
     cv::Mat getTrackImage();
 
+    void extractFeature(const std::vector<cv::Mat> &prev_pyr,
+                        const std::vector<cv::Mat> &cur_pyr,
+                        const std::vector<cv::Point2f> &prev_kps,
+                        std::vector<cv::Point2f> &cur_kps, int win_size,
+                        int pyr_level, std::vector<float> &err,
+                        std::vector<uchar> &status);
+
   private:
     int n_id_;
     bool has_prediction_;
@@ -73,6 +80,9 @@ class FeatureTracker {
     map<int, cv::Point2f> cur_un_right_pts_map_, prev_un_right_pts_map_;
     map<int, cv::Point2f> prev_leftPts_map_;
     std::vector<CameraPtr> camera_;
+
+    int klt_win_size_;
+    int pyramid_level_;
 };
 
 } // namespace lidar_localization

@@ -34,6 +34,7 @@ std::string EX_CALIB_RESULT_PATH;
 std::string VINS_RESULT_PATH;
 std::string OUTPUT_FOLDER;
 std::string IMU_TOPIC;
+std::string GNSS_TOPIC;
 int ROW, COL;
 int FRAME_GRID_ROWS, FRAME_GRID_COLS;
 double TD;
@@ -50,6 +51,13 @@ int MIN_DIST;
 double F_THRESHOLD;
 int SHOW_TRACK;
 int FLOW_BACK;
+
+int KLT_WIN_SIZE;
+int PYRAMID_LEVEL;
+int SCALE_FACTOR;
+int NFEATURES;
+int INIT_FAST;
+int MIN_FAST;
 
 template <typename T> T readParam(ros::NodeHandle &n, std::string name) {
     T ans;
@@ -88,6 +96,13 @@ void readParameters(std::string config_file) {
 
     MULTIPLE_THREAD = fsSettings["multiple_thread"];
 
+    KLT_WIN_SIZE = fsSettings["klt_win_size"];
+    PYRAMID_LEVEL = fsSettings["pyramid_level"];
+    SCALE_FACTOR = fsSettings["scale_factor"];
+    NFEATURES = fsSettings["nfeatures"];
+    INIT_FAST = fsSettings["init_fast"];
+    MIN_FAST = fsSettings["min_fast"];
+
     USE_IMU = fsSettings["imu"];
     LOG(INFO) << "USE_IMU: " << USE_IMU;
     if (USE_IMU) {
@@ -99,6 +114,8 @@ void readParameters(std::string config_file) {
         GYR_W = fsSettings["gyr_w"];
         G.z() = fsSettings["g_norm"];
     }
+
+    fsSettings["gnss_topic"] >> GNSS_TOPIC;
 
     SOLVER_TIME = fsSettings["max_solver_time"];
     NUM_ITERATIONS = fsSettings["max_num_iterations"];

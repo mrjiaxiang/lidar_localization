@@ -1,4 +1,4 @@
-#include "lidar_localization/front/LK/feature_extractor.h"
+#include "lidar_localization/front/FAST/fast_extractor.h"
 
 #include <iostream>
 #include <opencv2/core/core.hpp>
@@ -69,6 +69,40 @@ void ExtractorNode::DivideNode(ExtractorNode &n1, ExtractorNode &n2,
         n4.bNoMore = true;
 }
 
+static float IC_Angle(const cv::Mat &image, Point2f pt,
+                      const vector<int> &u_max) {
+    int m_01 = 0, m_10 = 0;
+    const uchar *center = &image.at<uchar>(cvRound(pt.y), cvRound(pt.x));
+
+    for (int u = -HALF_PATCH_SIZE; u <= HALF_PATCH_SIZE; ++u) {
+        m_10 += u * center[u];
+    }
+
+    // 这里的step1表示这个图像一行包含的字节总数。参考[https://blog.csdn.net/qianqing13579/article/details/45318279]
+    int step = (int)image.step1();
+    for (int v = 1; v <= HALF_PATCH_SIZE; ++v) {
+        int v_sum = 0;
+        int d = u_max[v];
+        // 在坐标范围内挨个像素遍历，实际是一次遍历2个
+        //  假设每次处理的两个点坐标，中心线下方为(x,y),中心线上方为(x,-y)
+        //  对于某次待处理的两个点：m_10 = Σ x*I(x,y) =  x*I(x,y) + x*I(x,-y) =
+        //  x*(I(x,y) + I(x,-y))
+        // 对于某次待处理的两个点：m_01 = Σ y*I(x,y) =
+        //  y*I(x,y) - y*I(x,-y) = y*(I(x,y) - I(x,-y))
+        for (int u = -d; u <= d; ++u) {
+            // 得到需要进行加运算和减运算的像素灰度值
+            // val_plus：在中心线下方x=u时的的像素灰度值
+            // val_minus：在中心线上方x=u时的像素灰度值
+            int val_plus = center[u + v * step],
+                val_minus = center[u - v * step];
+            v_sum += (val_plus - val_minus);
+            m_10 += u * (val_plus + val_minus);
+        }
+        m_01 += v * v_sum;
+    }
+    return fastAtan2((float)m_01, (float)m_10);
+}
+
 static bool compareNodes(pair<int, ExtractorNode *> &e1,
                          pair<int, ExtractorNode *> &e2) {
     if (e1.first < e2.first) {
@@ -84,11 +118,22 @@ static bool compareNodes(pair<int, ExtractorNode *> &e1,
     }
 }
 
+static void computeOrientation(const cv::Mat &image,
+                               vector<KeyPoint> &keypoints,
+                               const vector<int> &umax) {
+    for (vector<KeyPoint>::iterator keypoint = keypoints.begin(),
+                                    keypointEnd = keypoints.end();
+         keypoint != keypointEnd; ++keypoint) {
+        keypoint->angle = IC_Angle(image, keypoint->pt, umax);
+    }
+}
+
 FeatureExtractor::FeatureExtractor() {}
 
 FeatureExtractor::FeatureExtractor(int nfeatures, float scaleFactor,
-                                   int nlevels)
-    : nfeatures_(nfeatures), scaleFactor_(scaleFactor), nlevels_(nlevels) {
+                                   int nlevels, int initThFast, int minThFast)
+    : nfeatures_(nfeatures), scaleFactor_(scaleFactor), nlevels_(nlevels),
+      iniThFAST(iniThFAST), minThFAST_(minThFast) {
 
     mvScaleFactor_.resize(nlevels_);
     mvInvLevelSigma2_.resize(nlevels_);
@@ -124,6 +169,21 @@ FeatureExtractor::FeatureExtractor(int nfeatures, float scaleFactor,
         nDesiredFeaturesPerScale *= factor;
     }
     mnFeaturesPerLevel_[nlevels_ - 1] = std::max(nfeatures - sumFeatures, 0);
+
+    umax_.resize(HALF_PATCH_SIZE + 1);
+    int v, v0, vmax = cvFloor(HALF_PATCH_SIZE * sqrt(2.f) / 2 + 1);
+    int vmin = cvCeil(HALF_PATCH_SIZE * sqrt(2.f) / 2);
+    const double hp2 = HALF_PATCH_SIZE * HALF_PATCH_SIZE;
+    for (v = 0; v <= vmax; ++v) {
+        umax_[v] = cvRound(sqrt(hp2 - v * v));
+    }
+    // Make sure we are symmetric
+    for (v = HALF_PATCH_SIZE, v0 = 0; v >= vmin; --v) {
+        while (umax_[v0] == umax_[v0 + 1])
+            ++v0;
+        umax_[v] = v0;
+        ++v0;
+    }
 }
 
 FeatureExtractor::~FeatureExtractor() {}
@@ -237,6 +297,10 @@ void FeatureExtractor::ComputeKeyPointsOctTree(
             keypoints[i].octave = level;
             keypoints[i].size = scaledPatchSize;
         }
+    }
+
+    for (int level = 0; level < nlevels_; ++level) {
+        computeOrientation(mvImagePyramid_[level], allKeypoints[level], umax_);
     }
 }
 
